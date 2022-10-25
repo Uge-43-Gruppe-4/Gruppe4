@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using EnergiAPI.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<EnergiAPIContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EnergiAPIContext") ?? throw new InvalidOperationException("Connection string 'EnergiAPIContext' not found.")));
 
 // Add services to the container.
 
