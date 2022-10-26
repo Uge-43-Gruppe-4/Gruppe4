@@ -1,6 +1,6 @@
 ﻿namespace EnergiAPI.Model
 {
-    public class Root
+    public class MeteringPointRoot
     {
         public MeteringPoints MeteringPoints;
     }
