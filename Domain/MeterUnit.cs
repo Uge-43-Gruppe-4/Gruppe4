@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    internal class DataSorter
+    internal class MeterUnit
     {
     }
 }

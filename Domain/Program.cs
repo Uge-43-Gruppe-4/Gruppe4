@@ -10,6 +10,7 @@ namespace Domain
         {
             bool run = true;
             while (run)
+
             {
                 Menu MainMenu = new Menu("Hej og velkommen til ElSystemet", 4); // Main Title for the Menu
 
